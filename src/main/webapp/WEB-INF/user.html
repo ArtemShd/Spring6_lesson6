@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Info</title>
+</head>
+<body>
+<h1>User Details</h1>
+
+<p><b>ID:</b> <span th:text="${user.id}"></span></p>
+<p><b>Name:</b> <span th:text="${user.name}"></span></p>
+<p><b>Age:</b> <span th:text="${user.age}"></span></p>
+<p><b>Email:</b> <span th:text="${user.email}"></span></p>
+
+<a th:href="@{/users}">Back</a>
+</body>
+</html>
