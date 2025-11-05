@@ -23,7 +23,7 @@ public class UserController {
     }
 
     @GetMapping
-    public String listUsers(Model model) {
+    public String showUsers(Model model) {
         model.addAttribute("users", userServise.getAllUsers());
         return "users";
     }
